@@ -1,17 +1,14 @@
 import React from "react";
 
-const Display = () => {
+const Display = props => {
+  console.log(props);
   return (
     <div>
-      <h1>Score:</h1>
-
-      <h2>Home:</h2>
-
-      <h2>Guest:</h2>
-
-      <p>Ball: </p>
-      <p>Strike: </p>
-      <p>Out: </p>
+      .<h2>Home: {props.homeScore}</h2>
+      <h2>Guest: {props.guestScore}</h2>
+      <p>Ball: {props.ball}</p>
+      <p>Hit: {props.hit}</p>
+      <p>Out: {props.strike}</p>
     </div>
   );
 };
